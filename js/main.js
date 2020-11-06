@@ -22,6 +22,13 @@ $(document).ready(function () {
     offset: 80,
   });
 
+  // lazy load images
+  $(".ui.image").visibility({
+    type: "image",
+    transition: "vertical flip in",
+    duration: 500,
+  });
+
   // show dropdown on hover
   $(".main.menu  .ui.dropdown").dropdown({
     on: "hover",
