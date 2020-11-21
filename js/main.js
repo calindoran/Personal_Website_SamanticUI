@@ -17,6 +17,7 @@ $(document).ready(function () {
   $(".main.menu").visibility({
     type: "fixed",
   });
+
   $(".overlay").visibility({
     type: "fixed",
     offset: 80,
@@ -30,12 +31,12 @@ $(document).ready(function () {
   });
 
   // show dropdown on hover
-  $(".main.menu  .ui.dropdown").dropdown({
-    on: "hover",
-  });
+  // $(".main.menu  .ui.dropdown").dropdown({
+  //   on: "hover",
+  // });
 
   // show active on click
-  $(".ui.menu a.item").on("click", function () {
-    $(this).addClass("active").siblings().removeClass("active");
-  });
+  // $(".ui.menu a.item").on("click", function () {
+  //   $(this).addClass("active").siblings().removeClass("active");
+  // });
 });
