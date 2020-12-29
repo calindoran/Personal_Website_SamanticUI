@@ -23,20 +23,14 @@ $(document).ready(function () {
     offset: 80,
   });
 
+  $(".special.cards .image").dimmer({
+    on: "hover",
+  });
+
   // lazy load images
   $(".ui.image").visibility({
     type: "image",
     transition: "vertical flip in",
     duration: 500,
   });
-
-  // show dropdown on hover
-  // $(".main.menu  .ui.dropdown").dropdown({
-  //   on: "hover",
-  // });
-
-  // show active on click
-  // $(".ui.menu a.item").on("click", function () {
-  //   $(this).addClass("active").siblings().removeClass("active");
-  // });
 });
